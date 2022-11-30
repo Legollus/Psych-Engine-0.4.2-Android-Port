@@ -399,7 +399,7 @@ public static var screenshader:Shaders.PulseEffect = new PulseEffect();
 					add(stageCurtains);
 				}
 				
-				case 'hi':
+				case 'applecore':
 			{
 				defaultCamZoom = 0.85;
 				curStage = 'put your stage here';
@@ -410,48 +410,6 @@ public static var screenshader:Shaders.PulseEffect = new PulseEffect();
 
 				add(bg);
 				#if android
-				// below code assumes shaders are always enabled which is bad
-				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
-				testshader.waveAmplitude = 0.1;
-				testshader.waveFrequency = 5;
-				testshader.waveSpeed = 2;
-				bg.shader = testshader.shader;
-				curbg = bg;
-				#end
-			}
-				
-				case 'poop':
-			{
-				defaultCamZoom = 0.85;
-				curStage = 'put your stage here';
-				var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('put your stage here'));
-				bg.antialiasing = true;
-				bg.scrollFactor.set(0.6, 0.6);
-				bg.active = true;
-
-				add(bg);
-				#if windows
-				// below code assumes shaders are always enabled which is bad
-				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
-				testshader.waveAmplitude = 0.1;
-				testshader.waveFrequency = 5;
-				testshader.waveSpeed = 2;
-				bg.shader = testshader.shader;
-				curbg = bg;
-				#end
-			}
-				
-				case 'yeah':
-			{
-				defaultCamZoom = 0.85;
-				curStage = 'put your stage here';
-				var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('put your stage here'));
-				bg.antialiasing = true;
-				bg.scrollFactor.set(0.6, 0.6);
-				bg.active = true;
-
-				add(bg);
-				#if windows
 				// below code assumes shaders are always enabled which is bad
 				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
 				testshader.waveAmplitude = 0.1;
